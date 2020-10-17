@@ -1,18 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:rowCount="6"
+    android:background="#000000">                               <!-- 使用网格布局 -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="2"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right|bottom"
+        android:text="0"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textSize="100sp"
+        android:textColor="#ffffff"/>  <!-- 输入输出显示 -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape"
+        android:text="AC"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape"
+        android:text="+/-" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape"
+        android:text="%" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_orange"
+        android:text="÷"
+        android:textColor="#ffffff" /> <!-- 第一行功能:清空，正负号，取余，除法 -->
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="7"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="8"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="9"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_orange"
+        android:text="x"
+        android:textColor="#ffffff" /><!-- 第二行功能：三个数字，乘法 -->
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="4"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="5"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="6"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_orange"
+        android:text="-"
+        android:textColor="#ffffff" /><!-- 第三行功能：三个数字，减法 -->
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="1"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="2"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="3"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_orange"
+        android:text="+"
+        android:textColor="#ffffff" /><!-- 第四行功能：三个数字，加法 -->
+
+
+    <Button
+        android:layout_columnSpan="2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="0"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_grey"
+        android:text="."
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:background="@drawable/button_shape_orange"
+        android:text="="
+        android:textColor="#ffffff" /><!-- 第五行功能:零，小数点，等于-->
+
+
+</GridLayout>

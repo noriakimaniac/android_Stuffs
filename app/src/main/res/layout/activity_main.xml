@@ -25,7 +25,7 @@
         android:textSize="100sp"
         android:textColor="#ffffff"/>  <!-- 输入输出显示 -->
 
-    <Button
+    <Button android:id="@+id/btn_ac" android:text="AC"
 
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -35,10 +35,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape"
-        android:text="AC"
+        android:onClick="onClick"
         />
 
-    <Button
+    <Button android:id="@+id/btn_zf" android:text="+/-"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -47,9 +48,10 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape"
-        android:text="+/-" />
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_qy" android:text="%"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -58,9 +60,10 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape"
-        android:text="%" />
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_div" android:text="÷"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -69,10 +72,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_orange"
-        android:text="÷"
-        android:textColor="#ffffff" /> <!-- 第一行功能:清空，正负号，取余，除法 -->
+        android:textColor="#ffffff"
+        android:onClick="onClick"/> <!-- 第一行功能:清空，正负号，取余，除法 -->
 
-    <Button
+    <Button android:id="@+id/btn_7" android:text="7"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -81,10 +85,12 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="7"
-        android:textColor="#ffffff" />
 
-    <Button
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
+
+    <Button android:id="@+id/btn_8" android:text="8"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -93,10 +99,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="8"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_9" android:text="9"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -105,10 +112,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="9"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_time" android:text="x"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -117,10 +125,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_orange"
-        android:text="x"
-        android:textColor="#ffffff" /><!-- 第二行功能：三个数字，乘法 -->
+        android:textColor="#ffffff"
+        android:onClick="onClick"/><!-- 第二行功能：三个数字，乘法 -->
 
-    <Button
+    <Button android:id="@+id/btn_4" android:text="4"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -129,10 +138,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="4"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_5" android:text="5"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -141,10 +151,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="5"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_6" android:text="6"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -153,10 +164,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="6"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_minus" android:text="-"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -165,10 +177,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_orange"
-        android:text="-"
-        android:textColor="#ffffff" /><!-- 第三行功能：三个数字，减法 -->
+        android:textColor="#ffffff"
+        android:onClick="onClick"/><!-- 第三行功能：三个数字，减法 -->
 
-    <Button
+    <Button android:id="@+id/btn_1" android:text="1"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -177,10 +190,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="1"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_2" android:text="2"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -189,10 +203,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="2"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_3" android:text="3"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -201,10 +216,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="3"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_add" android:text="+"
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -213,11 +229,12 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_orange"
-        android:text="+"
-        android:textColor="#ffffff" /><!-- 第四行功能：三个数字，加法 -->
+        android:textColor="#ffffff"
+        android:onClick="onClick"/><!-- 第四行功能：三个数字，加法 -->
 
 
-    <Button
+    <Button android:id="@+id/btn_0" android:text="0"
+
         android:layout_columnSpan="2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -227,10 +244,11 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="0"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
 
-    <Button
+    <Button android:id="@+id/btn_dot" android:text="."
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -239,10 +257,12 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_grey"
-        android:text="."
-        android:textColor="#ffffff" />
 
-    <Button
+        android:textColor="#ffffff"
+        android:onClick="onClick"/>
+
+    <Button android:id="@+id/btn_equal" android:text="="
+
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_rowWeight="1"
@@ -251,8 +271,8 @@
         android:layout_marginLeft="10dp"
         android:textSize="24sp"
         android:background="@drawable/button_shape_orange"
-        android:text="="
-        android:textColor="#ffffff" /><!-- 第五行功能:零，小数点，等于-->
+        android:textColor="#ffffff"
+        android:onClick="onClick"/><!-- 第五行功能:零，小数点，等于-->
 
 
 </GridLayout>
